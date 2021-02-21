@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<statement>
+  <head>
+	<account_no>26209220256927</account_no>
+	<bank_key>320854</bank_key>
+	<currency>UAH</currency>
+	<stmt_no>001</stmt_no>
+	<stmt_date>10012018</stmt_date>
+	<open_balance>0.00</open_balance>
+	<end_balance>1000.00</end_balance>
+  </head>
+  <linedata>
+    <line rownum="1">
+	  <amount>1200.00</amount>
+	  <dr_cr>C</dr_cr>
+	  <bank_ref>5848</bank_ref>
+	  <btc>NTRF</btc>
+	  <note>Payment for consulting services, invoice #1800000018 from 01.01.2018, contract #10 from 01.01.2018</note>
+	  <bp_bank_key>300023</bp_bank_key>
+	  <bp_bank_acc>26004123418202</bp_bank_acc>
+	  <bp_tax_id>34878963</bp_tax_id>
+	  <bp_name>Sport Country LLC</bp_name>
+    </line>
+	<line rownum="2">
+	  <amount>200.00</amount>
+	  <dr_cr>D</dr_cr>
+	  <bank_ref>5849</bank_ref>
+	  <btc>NTRF</btc>
+	  <note>Payment for utility services, invoice #431 from 01.12.2017</note>
+	  <bp_bank_key>300216</bp_bank_key>
+	  <bp_bank_acc>26004139529147</bp_bank_acc>
+	  <bp_tax_id>34883012</bp_tax_id>
+	  <bp_name>Utility Investments LLD</bp_name>
+    </line>
+  </linedata>
+</statement>

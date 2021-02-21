@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Discounts Version="4.30">
+   <Discount>
+      <DiscountId>1</DiscountId>
+      <DiscountName>Jan20%off</DiscountName>
+      <DiscountType>Assigned to products</DiscountType>
+      <DiscountStartDate>01/01/2021</DiscountStartDate>
+      <DiscountEndDate>05/02/2021</DiscountEndDate>
+      <DiscountContect>This is my first discount</DiscountContect>
+   </Discount>
+   <Discount>
+      <DiscountId>2</DiscountId>
+      <DiscountName>Feb20%off</DiscountName>
+      <DiscountType>Assigned to manufacturers</DiscountType>
+      <DiscountStartDate>02/01/2021</DiscountStartDate>
+      <DiscountEndDate>03/03/2021</DiscountEndDate>
+      <DiscountContect>This is my Seconddiscount</DiscountContect>   
+   </Discount>
+   <Discount>
+      <DiscountId>3</DiscountId>
+      <DiscountName>March30%off</DiscountName>
+      <DiscountType>Assigned to categories</DiscountType>
+      <DiscountStartDate>03/01/2021</DiscountStartDate>
+      <DiscountEndDate>04/03/2021</DiscountEndDate>
+      <DiscountContect>This is my Third discount</DiscountContect>   
+   </Discount>
+   <Discount>
+      <DiscountId>4</DiscountId>
+      <DiscountName>April40%off</DiscountName>
+      <DiscountType>Assigned to shipping</DiscountType>
+      <DiscountStartDate>04/01/2021</DiscountStartDate>
+      <DiscountEndDate>05/05/2021</DiscountEndDate>
+      <DiscountContect>This is my Fourth discount</DiscountContect>   
+   </Discount>
+</Discounts>

@@ -1,3 +1,112 @@
 E:\\NOP BO Automation\\config\\config.ini
 
 #config.read("E:\\NOP BO Automation\\config\\config.ini")
+
+
+
+
+from mysql import connector
+from read_config import  Read_config
+
+db_host = Read_config.get_db_host()
+db_un = Read_config.get_db_username()
+db_pwd = Read_config.get_db_password()
+db_name = Read_config.get_db_name()
+db_prd_query = Read_config.get_prd_query()
+print(db_prd_query)
+
+myconnection = connector.connect(host=db_host, user=db_un, passwd = db_pwd)
+mycursor = myconnection.cursor()
+
+mycursor.execute(db_name)
+print(db_name)
+result = mycursor.execute("select * from products")
+
+for items in result:
+    print(items)
+
+
+
+
+
+
+=======
+
+
+from mysql import connector
+from utilities.read_config import Read_config
+
+db_host = Read_config.get_db_host()
+db_un = Read_config.get_db_username()
+db_pwd = Read_config.get_db_password()
+db_name = Read_config.get_db_name()
+db_prd_query = Read_config.get_prd_query()
+
+myconnection = connector.connect(host=db_host, user=db_un, passwd=db_pwd)
+mycursor = myconnection.cursor()
+mycursor.execute(db_name)
+mycursor.execute()
+
+for items in mycursor:
+    db_product_name = items[0]
+
+mycursor.close()
+
+
+
+
+
+sql_query = "select product_name from products where product_name = 'Motorola G5'"
+        self.bdv = DB_Validation()
+        self.bdv.db_validation(self.db_host_name, self.db_user_name, self.db_password, self.db_database_name, sql_query)
+        product_from_db = data
+        if product_from_db == self.name:
+            print("Product inserted in database!")
+            write_excel_sheet = "Sheet1"
+            read_excel_data.write_data(self.file_path, write_excel_sheet, 2, 2, self.sku)
+            read_excel_data.write_data(self.file_path, write_excel_sheet, 2, 3, "Pass")
+
+product_from_db = database_connection.db_product_name
+
+
+
+
+
+=================================================================================
+
+
+from mysql import connector
+
+class DB_Validation:
+
+    items_from_db  = ()
+
+    @staticmethod
+    def db_validation(hostname, db_user, db_password, db_name, sql_query):
+        print(hostname , "From DB Conncetion")
+        print(db_user , "From DB Conncetion")
+        print(db_password, "From DB Conncetion")
+        print(sql_query, "From DB Conncetion")
+        print(db_name)
+
+        myconnection = connector.connect(host=hostname, user=db_user, passwd=db_password)
+        mycursor = myconnection.cursor()
+        mycursor.execute(db_name)
+        mycursor.execute(sql_query)
+
+        # for items in mycursor:
+        #     db_product_name = items[0]
+        #     DB_Validation.item_from_db = db_product_name
+
+        res = mycursor.fetchall()
+        print(res)
+        DB_Validation.items_from_db = res
+
+        myconnection.commit()
+        mycursor.close()
+
+ ==============
+
+ for r in range(2, max_row + 1):
+    for c in range(1, max_col + 1):
+        sheet.cell(row=r, column=c).value = cust_email
